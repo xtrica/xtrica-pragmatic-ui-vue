@@ -1,7 +1,7 @@
 <template>
   <div>
     <button
-     v-if="!action.getWarnings().length"
+     v-if="action.areFieldsValid()"
      @click.stop.prevent="onSubmit"
      >Next</button>
     <button
