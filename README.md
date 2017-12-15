@@ -1,0 +1,1 @@
+# Xtrica Pragmatic UI Vue: Vue components and HTML templates for Pragmatic, with Xtrica notifications and progress bars.
