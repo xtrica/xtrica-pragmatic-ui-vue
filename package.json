@@ -1,0 +1,14 @@
+{
+  "name": "xtrica-pragmatic-ui-vue",
+  "version": "1.0.1513364671",
+  "description": "Xtrica Pragmatic UI Vue: Vue components and HTML templates for Pragmatic, with Xtrica notifications and progress bars.",
+  "author": {
+    "name": "Xtrica",
+    "url": "https://xtrica.com"
+  },
+  "dependencies": {
+    "xtrica-notify": "github:xtrica/xtrica-notify",
+    "xtrica-progress": "github:xtrica/xtrica-progress"
+  },
+  "license": "MIT"
+}

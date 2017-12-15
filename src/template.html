@@ -1,0 +1,24 @@
+<div>
+  <component
+   v-if="action.status.loading === false && action.status.failure === false && action.status.success === false"
+   :is="viewForm"
+   :action="action"
+   :onSubmit="onSubmit"
+   :onCancel="onCancel"
+   ></component>
+  <component
+   v-if="action.status.loading === true"
+   :is="viewLoading"
+   ></component>
+  <component
+   v-if="action.status.failure === true"
+   :is="viewFailure"
+   :action="action"
+   :onRetry="onRetry"
+   :onAbort="onAbort"
+   ></component>
+  <component
+   v-if="action.status.success === true"
+   :is="viewSuccess"
+   ></component>
+</div>
