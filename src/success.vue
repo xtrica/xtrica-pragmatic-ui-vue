@@ -1,7 +1,7 @@
 <template>
-  <div>Done!</div>
+  <h2><span>Done!</span></h2>
 </template>
 
-<script lang="ts">
+<script>
 export default {}
 </script>

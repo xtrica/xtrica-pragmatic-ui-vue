@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 const XtricaNotify = require('xtrica-notify').default
 const XtricaProgress = require('xtrica-progress').default
 export default {
