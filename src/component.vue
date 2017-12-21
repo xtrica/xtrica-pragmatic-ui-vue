@@ -51,8 +51,11 @@ export default {
           case (newStatus.warning === true): {
             let warnings = this.action.getWarnings()
             if (warnings.length) {
-              if (warnings[0].message !== false) {
-                this.notifications.notify('<p>' + warnings[0].message + '</p>', 'alert' + (this.action.status.error > -1 ? ' failure' : ' warning'), 6000)
+              for (let w = 0; w < warnings.length; w++) {
+                if (warnings[w].message !== false && warnings[w].message.length) {
+                  this.notifications.notify('<p>' + warnings[w].message + '</p>', 'alert' + (this.action.status.error > -1 ? ' failure' : ' warning'), 6000)
+                  break
+                }
               }
             } else {
               this.notifications.clear()
